@@ -6,6 +6,17 @@ body {
 div.container {
 }
 
+li {
+  list-style: none;
+}
+
+li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: purple;
+  font-weight: bold;
+}
+
 div#form {
   border-top: 1px solid black;
     float:left;
