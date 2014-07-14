@@ -13,6 +13,13 @@ $(document).ready(function() {
                                 ' ' + contactObj.last +
                                 ' ' + contactObj.address + "</li>");
 
+    $('li').last().click(function() {
+      $('div#show-contacts').text('');
+      $('div#show-contacts').append("<p>First Name: " + contactObj.first +
+                                    "<br />Last Name: " + contactObj.last +
+                                    "<br />Address: " + contactObj.address +
+                                    "</p>");
+    });
     event.preventDefault();
   });
 });
