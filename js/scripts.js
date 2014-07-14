@@ -9,6 +9,11 @@ $(document).ready(function() {
     contactObj.last = lastNameInp;
     contactObj.address = addressInp;
 
+    $("#first-name").val("");
+    $("#last-name").val("");
+    $("#address").val("");
+
+
     $("ul#contact-list").append("<li>" + contactObj.first +
                                 ' ' + contactObj.last +
                                 ' ' + contactObj.address + "</li>");
